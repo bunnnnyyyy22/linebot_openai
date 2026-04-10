@@ -27,7 +27,6 @@ def callback():
 
 @handler1.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    global counter
     text1 = event.message.text
     user_id = event.source.user_id  # 取得使用者ID
 
